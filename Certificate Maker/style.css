@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: auto 2em;
+}
+
+.form {
+    margin-top: 1em;
+    background-color: rgb(252 241 241);
+    width: auto;
+}
+
+svg {
+    margin: 0;
+    width: 100%;
+}
+
+.flist {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.fparent {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    padding: 2em;
+    padding-top: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+input {
+    border-width: 0 0 2px 1px;
+    border-color: rgb(216 206 206);
+    background-color: rgb(252 241 241);
+    padding: 0;
+    margin: 0;
+    height: 1.5em;
+    text-size-adjust: 1.5em;
+}
+
+input:active {
+    outline: none;
+}
+
+.flist:nth-child(2) {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.flist:nth-child(1) {
+    margin-left: 2.5em;
+}
+
+@media screen and (min-width: 20px) and (max-width: 600px) {
+    .fparent {
+        display: flex;
+        flex-direction: column;
+    }
+    .flist:nth-child(2) {
+        margin-left: 3.5em;
+    }
+}
+
+::placeholder {
+    color: rgb(152, 146, 146);
+}
+
+select {
+    color: rgb(152, 146, 146);
+    background-color: rgb(252 241 241);
+    border-width: 0 0 2px 1px;
+    border-color: rgb(216 206 206);
+    margin-left: 0;
+}
+
+select option {
+    background-color: rgb(255, 255, 255);
+}
+
+#sem {
+    margin-left: 0;
+}
+
+label {
+    padding: 0;
+    margin: 0;
+}
