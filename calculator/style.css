@@ -16,11 +16,13 @@ button {
     height: 2em;
     color: white;
     background-color: rgb(35, 53, 70);
+    text-align: end;
 }
 
 .current {
     color: white;
     background-color: rgb(35, 53, 70);
+    text-align: end;
 }
 
 .screen {
