@@ -7,3 +7,24 @@
 .container-sm {
     width: 15em;
 }
+
+button {
+    width: 100%;
+}
+
+.previous {
+    height: 2em;
+    color: white;
+    background-color: rgb(35, 53, 70);
+}
+
+.current {
+    color: white;
+    background-color: rgb(35, 53, 70);
+}
+
+.screen {
+    background-color: rgb(35, 53, 70);
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
