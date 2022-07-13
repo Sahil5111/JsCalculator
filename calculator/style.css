@@ -6,6 +6,7 @@
 
 .container-sm {
     width: 15em;
+    background-color: #C0B33F;
 }
 
 button {
@@ -34,4 +35,8 @@ button {
 
 .btns {
     padding-bottom: 1em;
+}
+
+body{
+    background-color: rgb(122, 140, 155);
 }
