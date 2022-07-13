@@ -23,6 +23,7 @@ button {
     color: white;
     background-color: rgb(35, 53, 70);
     text-align: end;
+    font-weight: bolder;
 }
 
 .screen {
