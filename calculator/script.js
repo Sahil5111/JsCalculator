@@ -13,13 +13,19 @@ class calc {
         this.t2text=this.t2text.toString().slice(0, -1)
     }
     opersel(oper){
-        this.t1text=this.t2text.toString()
+        if(this.t1text.includes('+')||this.t1text.includes('-')||this.t1text.includes('*')||this.t1text.includes('÷')){
+            this.calculate()
+        }
+        
+        
+        this.t1text=this.t2text.toString()+oper.toString()
         this.oper=oper
         this.t2text=""
+        
     }
 
     calculate() {
-        let num1=parseFloat(this.t1text)
+        let num1=parseFloat(this.t1text.slice(0,-1))
         let num2=parseFloat(this.t2text)
         let result=0
         switch(this.oper){
@@ -38,8 +44,9 @@ class calc {
             default:
                 return
         }
+        this.t1text=this.t1text+this.t2text
+        this.result=result.toString()
         this.t2text=result.toString()
-        this.t1text=""
         this.oper=undefined
 
     }
